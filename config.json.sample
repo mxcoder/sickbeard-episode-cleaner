@@ -1,20 +1,20 @@
+// STRIP ALL COMMENTS BEFORE USE
 {
+	"global": {
+		"remove": "ALL" // (ALL or DOWNLOADED or ARCHIVED or NONE, default ALL)
+	},
 	"server": {
-		"hostname": "",
-		"port": 8081,
+		"hostname": "localhost",
+		"port": "8081",
 		"web_root": "",
-		"api_key": ""
+		"api_key": "REQUIRED-GENERATED-API-KEY"
 	},
 	"shows": {
-		// The Colbert Report
-		"79274": {					// tvdb id
-			"keep_episodes": 10		// number of episodes to keep
+		"12345": {
+			"name": "Some show", // (Informative only, doesn't need to comply with DB)
+			"keep_episodes": 3, // Positive integer
+			"remove": "ALL" // (ALL or DOWNLOADED or ARCHIVED or NONE, default ALL)
 		},
-		"71256": {					// tvdb id
-			"keep_episodes": 10		// number of episodes to keep
-		},
-		"194751": {					// tvdb id
-			"keep_episodes": 10		// number of episodes to keep
-		}
+		... // add more dict entries
 	}
 }
