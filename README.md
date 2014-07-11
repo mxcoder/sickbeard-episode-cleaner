@@ -24,6 +24,7 @@ The script sorts the episodes you have for a show by the season and episode numb
 
 ## How to use from command line
 
+```
 usage: main.py [-h] [-d] [-c CONFIG] [--tvdbid-forced TVDBID_FORCED]
                [full_path] [original_name] [tvdbid] [season] [episode]
                [air_date]
@@ -48,6 +49,7 @@ optional arguments:
   --tvdbid-forced TVDBID_FORCED
                         Sickbeard Show ID (tvdbid) to force operations on one
                         show
+```
 
 - Force operations on a single Show
 ``` main.py [-d|--debug] [-c|--config config.json] --tvdbid-force 12345 ```
